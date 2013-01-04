@@ -1,0 +1,12 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="ConsoleApplication1.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="ConsoleApplication1_CurrencyService_country" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://www.webservicex.net/country.asmx</Value>
+    </Setting>
+    <Setting Name="ConsoleApplication1_CustomFieldsWebSvc_CustomFields" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://sp2010demo/pwa/_vti_bin/PSI/CustomFields.asmx</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

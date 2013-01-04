@@ -1,0 +1,308 @@
+<Configuration>
+  <SettingsComponent>
+    <string />
+    <integer />
+    <boolean>
+      <setting name="livetemplates.csharp.usevar">True</setting>
+      <setting name="SolutionAnalysisEnabled">False</setting>
+    </boolean>
+  </SettingsComponent>
+  <RecentFiles>
+    <RecentFiles>
+      <File id="AF310BE4-DCB6-40CC-964A-36B8F34B4404/f:ThisAddIn.cs" caret="377" fromTop="0" />
+      <File id="AF310BE4-DCB6-40CC-964A-36B8F34B4404/f:CurrencyConverter.Designer.cs" caret="4105" fromTop="15" />
+      <File id="68E5450C-BF10-4DCF-B9D8-A1039A84AE05/f:Program.cs" caret="2432" fromTop="26" />
+      <File id="AF310BE4-DCB6-40CC-964A-36B8F34B4404/f:app.config" caret="0" fromTop="0" />
+      <File id="AF310BE4-DCB6-40CC-964A-36B8F34B4404/f:CurrencyConverter.cs" caret="18047" fromTop="24" />
+    </RecentFiles>
+    <RecentEdits>
+      <File id="68E5450C-BF10-4DCF-B9D8-A1039A84AE05/f:Program.cs" caret="1292" fromTop="17" />
+      <File id="68E5450C-BF10-4DCF-B9D8-A1039A84AE05/f:Program.cs" caret="991" fromTop="16" />
+      <File id="AF310BE4-DCB6-40CC-964A-36B8F34B4404/f:CurrencyConverter.Designer.cs" caret="4105" fromTop="13" />
+      <File id="68E5450C-BF10-4DCF-B9D8-A1039A84AE05/f:Program.cs" caret="0" fromTop="0" />
+      <File id="68E5450C-BF10-4DCF-B9D8-A1039A84AE05/f:Program.cs" caret="704" fromTop="19" />
+      <File id="AF310BE4-DCB6-40CC-964A-36B8F34B4404/f:CurrencyConverter.cs" caret="18446" fromTop="7" />
+      <File id="AF310BE4-DCB6-40CC-964A-36B8F34B4404/f:CurrencyConverter.cs" caret="18446" fromTop="17" />
+      <File id="AF310BE4-DCB6-40CC-964A-36B8F34B4404/f:CurrencyConverter.cs" caret="211" fromTop="4" />
+      <File id="AF310BE4-DCB6-40CC-964A-36B8F34B4404/f:CurrencyConverter.cs" caret="1065" fromTop="4" />
+      <File id="AF310BE4-DCB6-40CC-964A-36B8F34B4404/f:CurrencyConverter.cs" caret="18446" fromTop="19" />
+      <File id="AF310BE4-DCB6-40CC-964A-36B8F34B4404/f:CurrencyConverter.cs" caret="18446" fromTop="17" />
+      <File id="AF310BE4-DCB6-40CC-964A-36B8F34B4404/f:CurrencyConverter.cs" caret="18446" fromTop="16" />
+      <File id="AF310BE4-DCB6-40CC-964A-36B8F34B4404/f:CurrencyConverter.cs" caret="18446" fromTop="16" />
+      <File id="AF310BE4-DCB6-40CC-964A-36B8F34B4404/f:CurrencyConverter.cs" caret="18446" fromTop="11" />
+      <File id="AF310BE4-DCB6-40CC-964A-36B8F34B4404/f:CurrencyConverter.cs" caret="16540" fromTop="15" />
+      <File id="68E5450C-BF10-4DCF-B9D8-A1039A84AE05/f:Program.cs" caret="320" fromTop="14" />
+      <File id="68E5450C-BF10-4DCF-B9D8-A1039A84AE05/f:Program.cs" caret="782" fromTop="11" />
+      <File id="68E5450C-BF10-4DCF-B9D8-A1039A84AE05/f:Program.cs" caret="1476" fromTop="23" />
+      <File id="AF310BE4-DCB6-40CC-964A-36B8F34B4404/f:CurrencyConverter.cs" caret="19237" fromTop="43" />
+      <File id="AF310BE4-DCB6-40CC-964A-36B8F34B4404/f:CurrencyConverter.cs" caret="18522" fromTop="11" />
+      <File id="AF310BE4-DCB6-40CC-964A-36B8F34B4404/f:CurrencyConverter.cs" caret="16280" fromTop="20" />
+      <File id="AF310BE4-DCB6-40CC-964A-36B8F34B4404/f:CurrencyConverter.cs" caret="16056" fromTop="15" />
+      <File id="AF310BE4-DCB6-40CC-964A-36B8F34B4404/f:CurrencyConverter.cs" caret="15852" fromTop="10" />
+      <File id="AF310BE4-DCB6-40CC-964A-36B8F34B4404/f:CurrencyConverter.cs" caret="16976" fromTop="20" />
+      <File id="AF310BE4-DCB6-40CC-964A-36B8F34B4404/f:CurrencyConverter.cs" caret="325" fromTop="12" />
+      <File id="AF310BE4-DCB6-40CC-964A-36B8F34B4404/f:CurrencyConverter.cs" caret="17435" fromTop="29" />
+      <File id="AF310BE4-DCB6-40CC-964A-36B8F34B4404/f:CurrencyConverter.cs" caret="16897" fromTop="20" />
+      <File id="68E5450C-BF10-4DCF-B9D8-A1039A84AE05/f:Program.cs" caret="1299" fromTop="26" />
+      <File id="AF310BE4-DCB6-40CC-964A-36B8F34B4404/f:app.config" caret="0" fromTop="0" />
+      <File id="AF310BE4-DCB6-40CC-964A-36B8F34B4404/f:CurrencyConverter.cs" caret="18047" fromTop="24" />
+    </RecentEdits>
+  </RecentFiles>
+  <NAntValidationSettings>
+    <NAntPath value="" />
+  </NAntValidationSettings>
+  <UnitTestRunner>
+    <Providers />
+  </UnitTestRunner>
+  <UnitTestRunnerNUnit>
+    <NUnitInstallDir IsNull="False">
+    </NUnitInstallDir>
+    <UseAddins>Never</UseAddins>
+  </UnitTestRunnerNUnit>
+  <CompletionStatisticsManager>
+    <ItemStatistics item="Default">
+      <Item value="private" priority="0" />
+      <Item value="override" priority="0" />
+      <Item value="new" priority="9" />
+      <Item value="RibbonDropDownItem" priority="1" />
+      <Item value="Id" priority="1" />
+      <Item value="Label" priority="2" />
+      <Item value="RibbonLabel`0" priority="1" />
+      <Item value="Name" priority="1" />
+      <Item value="true" priority="6" />
+      <Item value="Globals`0" priority="2" />
+      <Item value="foreach" priority="9" />
+      <Item value="MenuCurrencies" priority="2" />
+      <Item value="Visible" priority="0" />
+      <Item value="ShowLabel" priority="0" />
+      <Item value="RibbonMenu`0" priority="0" />
+      <Item value="Microsoft" priority="4" />
+      <Item value="Office" priority="4" />
+      <Item value="Tools" priority="0" />
+      <Item value="Ribbon" priority="0" />
+      <Item value="RibbonToggleButton`0" priority="0" />
+      <Item value="CurrencyService" priority="0" />
+      <Item value="country`0" priority="0" />
+      <Item value="country" priority="5" />
+      <Item value="Console`0" priority="5" />
+      <Item value="currency" priority="0" />
+      <Item value="string" priority="10" />
+      <Item value="dataSet" priority="3" />
+      <Item value="DataSet" priority="0" />
+      <Item value="outPut" priority="1" />
+      <Item value="DataTable`0" priority="0" />
+      <Item value="dataTable" priority="1" />
+      <Item value="DataRow`0" priority="0" />
+      <Item value="DataColumn`0" priority="0" />
+      <Item value="dataColumn" priority="1" />
+      <Item value="dataRow" priority="0" />
+      <Item value="XmlReader`0" priority="0" />
+      <Item value="Stream`0" priority="0" />
+      <Item value="reader" priority="0" />
+      <Item value="if" priority="4" />
+      <Item value="null" priority="0" />
+      <Item value="this" priority="1" />
+      <Item value="try" priority="3" />
+      <Item value="group1" priority="1" />
+      <Item value="var" priority="4" />
+      <Item value="app" priority="4" />
+      <Item value="task" priority="7" />
+      <Item value="Interop" priority="3" />
+      <Item value="MSProject" priority="3" />
+      <Item value="Task`0" priority="0" />
+      <Item value="return" priority="2" />
+      <Item value="BtnConvertCurrency" priority="0" />
+      <Item value="Convert`0" priority="1" />
+      <Item value="cost" priority="1" />
+      <Item value="GrpConverter" priority="0" />
+      <Item value="ex" priority="2" />
+      <Item value="false" priority="1" />
+      <Item value="flag" priority="1" />
+      <Item value="NotifyIcon" priority="3" />
+      <Item value="pjMinimized" priority="0" />
+      <Item value="CmbCurrency" priority="3" />
+      <Item value="ForeignKeyConstraint`0" priority="0" />
+      <Item value="CultureInfo`0" priority="0" />
+      <Item value="AllCultures" priority="0" />
+      <Item value="cultureInfo" priority="0" />
+      <Item value="as" priority="1" />
+      <Item value="_EProjectDoc`0" priority="2" />
+      <Item value="CustomFieldsWebSvc" priority="0" />
+      <Item value="CustomFields`0" priority="0" />
+      <Item value="customFields" priority="1" />
+      <Item value="CustomFields" priority="0" />
+      <Item value="CustomFieldDataSet`0" priority="0" />
+      <Item value="customFieldsRow" priority="1" />
+      <Item value="System" priority="0" />
+      <Item value="Net" priority="0" />
+      <Item value="NetworkCredential`0" priority="0" />
+      <Item value="break" priority="0" />
+      <Item value="field" priority="2" />
+      <Item value="PjField`0" priority="0" />
+      <Item value="pjTask" priority="0" />
+      <Item value="TxtCurrencyRate" priority="1" />
+      <Item value="value" priority="2" />
+      <Item value="TryGetCurrencySymbol`0" priority="0" />
+      <Item value="out" priority="0" />
+      <Item value="currencyCode" priority="0" />
+      <Item value="currencySymbol" priority="1" />
+      <Item value="pjBeforeWithSpace" priority="0" />
+      <Item value="Double`0" priority="0" />
+      <Item value="public" priority="0" />
+      <Item value="MessageBox`0" priority="0" />
+      <Item value="OK" priority="0" />
+      <Item value="Error" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Microsoft.Office.Tools.Ribbon.RibbonDropDown">
+      <Item value="Items" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Microsoft.Office.Tools.Ribbon.RibbonDropDownItemCollection">
+      <Item value="Add`0" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Microsoft.Office.Tools.Ribbon.RibbonMenu">
+      <Item value="Items" priority="1" />
+      <Item value="Enabled" priority="0" />
+      <Item value="Dynamic" priority="2" />
+      <Item value="Dispose`0" priority="0" />
+      <Item value="Label" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Microsoft.Office.Tools.Ribbon.RibbonComponentCollection`1">
+      <Item value="Add`0" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@ProjeqzCurrencyConverter.Globals">
+      <Item value="Ribbons" priority="1" />
+      <Item value="ThisAddIn" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:ConsoleApplication1.CurrencyService.country">
+      <Item value="GetCurrencies`0" priority="2" />
+      <Item value="GetCurrencyByCountry`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Console">
+      <Item value="WriteLine`0" priority="4" />
+      <Item value="ReadKey`0" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Char">
+      <Item value="ToString`0" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Data.DataSet">
+      <Item value="ReadXml`0" priority="0" />
+      <Item value="Tables" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Data.DataTable">
+      <Item value="Rows" priority="0" />
+      <Item value="Columns" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Data.DataColumn">
+      <Item value="ColumnName" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Xml.XmlReader">
+      <Item value="Create`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.String">
+      <Item value="IsNullOrEmpty`0" priority="4" />
+      <Item value="Empty" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Object">
+      <Item value="ToString`0" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:ProjeqzCurrencyConverter.CurrencyConverter">
+      <Item value="group1" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Microsoft.Office.Tools.Ribbon.RibbonGroup">
+      <Item value="Label" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:ProjeqzCurrencyConverter.ThisAddIn">
+      <Item value="Application" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Microsoft.Office.Interop.MSProject.Application">
+      <Item value="ActiveProject" priority="2" />
+      <Item value="WindowState" priority="0" />
+      <Item value="DefaultView" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Microsoft.Office.Interop.MSProject.Project">
+      <Item value="Tasks" priority="0" />
+      <Item value="LinkedFields" priority="4" />
+      <Item value="CurrencySymbol" priority="0" />
+      <Item value="CurrencyCode" priority="0" />
+      <Item value="CurrencyDigits" priority="0" />
+      <Item value="CurrencySymbolPosition" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Microsoft.Office.Tools.Ribbon.RibbonComboBox">
+      <Item value="Items" priority="0" />
+      <Item value="Text" priority="3" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Microsoft.Office.Interop.MSProject.Task">
+      <Item value="ActualCost" priority="1" />
+      <Item value="Baseline1Cost" priority="0" />
+      <Item value="SetField`0" priority="2" />
+      <Item value="LinkedFields" priority="0" />
+      <Item value="GetField`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Microsoft.Office.Tools.Ribbon.RibbonEditBox">
+      <Item value="Text" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Convert">
+      <Item value="ToDouble`0" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Double">
+      <Item value="ToString`0" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Exception">
+      <Item value="Message" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Forms.NotifyIcon">
+      <Item value="BalloonTipIcon" priority="0" />
+      <Item value="Text" priority="1" />
+      <Item value="ShowBalloonTip`0" priority="0" />
+      <Item value="BalloonTipText" priority="0" />
+      <Item value="Visible" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Windows.Forms.ToolTipIcon">
+      <Item value="Info" priority="0" />
+      <Item value="Error" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Globalization.CultureInfo">
+      <Item value="CurrentCulture" priority="0" />
+      <Item value="GetCultures`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Globalization.CultureInfo">
+      <Item value="DisplayName" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Globalization.CultureTypes">
+      <Item value="AllCultures" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.String">
+      <Item value="IndexOf`0" priority="0" />
+      <Item value="Replace`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:ConsoleApplication1.CustomFieldsWebSvc.CustomFields">
+      <Item value="ReadCustomFields`0" priority="0" />
+      <Item value="Credentials" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:ConsoleApplication1.CustomFieldsWebSvc.CustomFieldDataSet">
+      <Item value="CustomFields" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@ConsoleApplication1.CustomFieldsWebSvc.CustomFieldDataSet">
+      <Item value="CustomFieldsRow`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:ConsoleApplication1.CustomFieldsWebSvc.CustomFieldDataSet+CustomFieldsDataTable">
+      <Item value="Rows" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:ConsoleApplication1.CustomFieldsWebSvc.CustomFieldDataSet+CustomFieldsRow">
+      <Item value="MD_PROP_NAME" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:ProjeqzCurrencyConverter.CustomFieldsWebSvc.CustomFieldDataSet+CustomFieldsRow">
+      <Item value="MD_PROP_UID" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Guid">
+      <Item value="ToByteArray`0" priority="0" />
+      <Item value="ToString`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@Microsoft.Office.Interop.MSProject.PjField">
+      <Item value="pjTaskEnterpriseCost1" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Windows.Forms.MessageBox">
+      <Item value="Show`0" priority="0" />
+    </ItemStatistics>
+  </CompletionStatisticsManager>
+</Configuration>

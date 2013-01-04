@@ -1,0 +1,6 @@
+C:\Users\Santhosh\Desktop\MyWorks\ProjeqzCurrencyConverter\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe.config
+C:\Users\Santhosh\Desktop\MyWorks\ProjeqzCurrencyConverter\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe
+C:\Users\Santhosh\Desktop\MyWorks\ProjeqzCurrencyConverter\ConsoleApplication1\bin\Debug\ConsoleApplication1.pdb
+C:\Users\Santhosh\Desktop\MyWorks\ProjeqzCurrencyConverter\ConsoleApplication1\obj\x86\Debug\ConsoleApplication1.exe
+C:\Users\Santhosh\Desktop\MyWorks\ProjeqzCurrencyConverter\ConsoleApplication1\obj\x86\Debug\ConsoleApplication1.pdb
+C:\Users\Santhosh\Desktop\MyWorks\ProjeqzCurrencyConverter\ConsoleApplication1\obj\x86\Debug\ConsoleApplication1.csprojResolveAssemblyReference.cache

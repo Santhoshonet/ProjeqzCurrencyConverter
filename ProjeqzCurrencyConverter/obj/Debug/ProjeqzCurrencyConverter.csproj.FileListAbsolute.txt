@@ -1,0 +1,10 @@
+C:\Users\Santhosh\Desktop\MyWorks\ProjeqzCurrencyConverter\ProjeqzCurrencyConverter\bin\Debug\ProjeqzCurrencyConverter.dll
+C:\Users\Santhosh\Desktop\MyWorks\ProjeqzCurrencyConverter\ProjeqzCurrencyConverter\bin\Debug\ProjeqzCurrencyConverter.pdb
+C:\Users\Santhosh\Desktop\MyWorks\ProjeqzCurrencyConverter\ProjeqzCurrencyConverter\obj\Debug\ProjeqzCurrencyConverter.Properties.Resources.resources
+C:\Users\Santhosh\Desktop\MyWorks\ProjeqzCurrencyConverter\ProjeqzCurrencyConverter\obj\Debug\ProjeqzCurrencyConverter.csproj.GenerateResource.Cache
+C:\Users\Santhosh\Desktop\MyWorks\ProjeqzCurrencyConverter\ProjeqzCurrencyConverter\obj\Debug\ProjeqzCurrencyConverter.dll
+C:\Users\Santhosh\Desktop\MyWorks\ProjeqzCurrencyConverter\ProjeqzCurrencyConverter\obj\Debug\ProjeqzCurrencyConverter.pdb
+C:\Users\Santhosh\Desktop\MyWorks\ProjeqzCurrencyConverter\ProjeqzCurrencyConverter\bin\Debug\ProjeqzCurrencyConverter.dll.manifest
+C:\Users\Santhosh\Desktop\MyWorks\ProjeqzCurrencyConverter\ProjeqzCurrencyConverter\bin\Debug\ProjeqzCurrencyConverter.vsto
+C:\Users\Santhosh\Desktop\MyWorks\ProjeqzCurrencyConverter\ProjeqzCurrencyConverter\obj\Debug\ProjeqzCurrencyConverter.CurrencyConverter.resources
+C:\Users\Santhosh\Desktop\MyWorks\ProjeqzCurrencyConverter\ProjeqzCurrencyConverter\bin\Debug\ProjeqzCurrencyConverter.dll.config
