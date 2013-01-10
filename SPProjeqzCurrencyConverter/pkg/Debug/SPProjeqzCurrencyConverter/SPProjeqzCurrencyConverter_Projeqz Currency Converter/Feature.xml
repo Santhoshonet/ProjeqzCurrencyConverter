@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Feature xmlns="http://schemas.microsoft.com/sharepoint/" Title="Projeqz Currency Converter" Description="It will creates a timer job to update all currency rates every day." Id="fd136728-689b-4153-b83d-ce4e0afdc9b4" ReceiverAssembly="SPProjeqzCurrencyConverter, Version=1.0.0.0, Culture=neutral, PublicKeyToken=fafb5aa30ffb96f6" ReceiverClass="SPProjeqzCurrencyConverter.Features.Projeqz_Currency_Converter.ProjeqzCurrencyConverterEventReceiver" Scope="Site"></Feature>

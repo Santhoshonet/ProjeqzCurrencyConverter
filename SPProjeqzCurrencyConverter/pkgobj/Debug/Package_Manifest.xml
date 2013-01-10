@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Solution xmlns="http://schemas.microsoft.com/sharepoint/" SolutionId="b35c4ca0-40fe-496a-901c-402c42784d82" SharePointProductVersion="14.0">
+  <Assemblies>
+    <Assembly Location="SPProjeqzCurrencyConverter.dll" DeploymentTarget="GlobalAssemblyCache" />
+  </Assemblies>
+  <FeatureManifests>
+    <FeatureManifest Location="SPProjeqzCurrencyConverter_Projeqz Currency Converter\Feature.xml" />
+  </FeatureManifests>
+</Solution>

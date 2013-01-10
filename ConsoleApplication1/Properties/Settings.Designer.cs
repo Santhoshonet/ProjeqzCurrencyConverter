@@ -42,5 +42,15 @@ namespace ConsoleApplication1.Properties {
                 return ((string)(this["ConsoleApplication1_CustomFieldsWebSvc_CustomFields"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.WebServiceUrl)]
+        [global::System.Configuration.DefaultSettingValueAttribute("http://www.webservicex.net/CurrencyConvertor.asmx")]
+        public string ConsoleApplication1_CurrencyServices_CurrencyConvertor {
+            get {
+                return ((string)(this["ConsoleApplication1_CurrencyServices_CurrencyConvertor"]));
+            }
+        }
     }
 }

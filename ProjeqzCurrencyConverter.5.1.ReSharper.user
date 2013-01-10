@@ -11,16 +11,16 @@
     <RecentFiles>
       <File id="AF310BE4-DCB6-40CC-964A-36B8F34B4404/f:ThisAddIn.cs" caret="377" fromTop="0" />
       <File id="AF310BE4-DCB6-40CC-964A-36B8F34B4404/f:CurrencyConverter.Designer.cs" caret="4105" fromTop="15" />
-      <File id="68E5450C-BF10-4DCF-B9D8-A1039A84AE05/f:Program.cs" caret="2432" fromTop="26" />
       <File id="AF310BE4-DCB6-40CC-964A-36B8F34B4404/f:app.config" caret="0" fromTop="0" />
-      <File id="AF310BE4-DCB6-40CC-964A-36B8F34B4404/f:CurrencyConverter.cs" caret="18047" fromTop="24" />
+      <File id="AF310BE4-DCB6-40CC-964A-36B8F34B4404/f:CurrencyConverter.cs" caret="15609" fromTop="13" />
+      <File id="68E5450C-BF10-4DCF-B9D8-A1039A84AE05/f:Program.cs" caret="511" fromTop="7" />
     </RecentFiles>
     <RecentEdits>
-      <File id="68E5450C-BF10-4DCF-B9D8-A1039A84AE05/f:Program.cs" caret="1292" fromTop="17" />
-      <File id="68E5450C-BF10-4DCF-B9D8-A1039A84AE05/f:Program.cs" caret="991" fromTop="16" />
+      <File id="68E5450C-BF10-4DCF-B9D8-A1039A84AE05/f:Program.cs" caret="1499" fromTop="17" />
+      <File id="68E5450C-BF10-4DCF-B9D8-A1039A84AE05/f:Program.cs" caret="1198" fromTop="16" />
       <File id="AF310BE4-DCB6-40CC-964A-36B8F34B4404/f:CurrencyConverter.Designer.cs" caret="4105" fromTop="13" />
       <File id="68E5450C-BF10-4DCF-B9D8-A1039A84AE05/f:Program.cs" caret="0" fromTop="0" />
-      <File id="68E5450C-BF10-4DCF-B9D8-A1039A84AE05/f:Program.cs" caret="704" fromTop="19" />
+      <File id="68E5450C-BF10-4DCF-B9D8-A1039A84AE05/f:Program.cs" caret="911" fromTop="19" />
       <File id="AF310BE4-DCB6-40CC-964A-36B8F34B4404/f:CurrencyConverter.cs" caret="18446" fromTop="7" />
       <File id="AF310BE4-DCB6-40CC-964A-36B8F34B4404/f:CurrencyConverter.cs" caret="18446" fromTop="17" />
       <File id="AF310BE4-DCB6-40CC-964A-36B8F34B4404/f:CurrencyConverter.cs" caret="211" fromTop="4" />
@@ -31,9 +31,7 @@
       <File id="AF310BE4-DCB6-40CC-964A-36B8F34B4404/f:CurrencyConverter.cs" caret="18446" fromTop="16" />
       <File id="AF310BE4-DCB6-40CC-964A-36B8F34B4404/f:CurrencyConverter.cs" caret="18446" fromTop="11" />
       <File id="AF310BE4-DCB6-40CC-964A-36B8F34B4404/f:CurrencyConverter.cs" caret="16540" fromTop="15" />
-      <File id="68E5450C-BF10-4DCF-B9D8-A1039A84AE05/f:Program.cs" caret="320" fromTop="14" />
-      <File id="68E5450C-BF10-4DCF-B9D8-A1039A84AE05/f:Program.cs" caret="782" fromTop="11" />
-      <File id="68E5450C-BF10-4DCF-B9D8-A1039A84AE05/f:Program.cs" caret="1476" fromTop="23" />
+      <File id="68E5450C-BF10-4DCF-B9D8-A1039A84AE05/f:Program.cs" caret="1683" fromTop="23" />
       <File id="AF310BE4-DCB6-40CC-964A-36B8F34B4404/f:CurrencyConverter.cs" caret="19237" fromTop="43" />
       <File id="AF310BE4-DCB6-40CC-964A-36B8F34B4404/f:CurrencyConverter.cs" caret="18522" fromTop="11" />
       <File id="AF310BE4-DCB6-40CC-964A-36B8F34B4404/f:CurrencyConverter.cs" caret="16280" fromTop="20" />
@@ -43,9 +41,11 @@
       <File id="AF310BE4-DCB6-40CC-964A-36B8F34B4404/f:CurrencyConverter.cs" caret="325" fromTop="12" />
       <File id="AF310BE4-DCB6-40CC-964A-36B8F34B4404/f:CurrencyConverter.cs" caret="17435" fromTop="29" />
       <File id="AF310BE4-DCB6-40CC-964A-36B8F34B4404/f:CurrencyConverter.cs" caret="16897" fromTop="20" />
-      <File id="68E5450C-BF10-4DCF-B9D8-A1039A84AE05/f:Program.cs" caret="1299" fromTop="26" />
+      <File id="68E5450C-BF10-4DCF-B9D8-A1039A84AE05/f:Program.cs" caret="1506" fromTop="26" />
       <File id="AF310BE4-DCB6-40CC-964A-36B8F34B4404/f:app.config" caret="0" fromTop="0" />
       <File id="AF310BE4-DCB6-40CC-964A-36B8F34B4404/f:CurrencyConverter.cs" caret="18047" fromTop="24" />
+      <File id="68E5450C-BF10-4DCF-B9D8-A1039A84AE05/f:Program.cs" caret="1561" fromTop="10" />
+      <File id="68E5450C-BF10-4DCF-B9D8-A1039A84AE05/f:Program.cs" caret="511" fromTop="7" />
     </RecentEdits>
   </RecentFiles>
   <NAntValidationSettings>
@@ -63,7 +63,7 @@
     <ItemStatistics item="Default">
       <Item value="private" priority="0" />
       <Item value="override" priority="0" />
-      <Item value="new" priority="9" />
+      <Item value="new" priority="11" />
       <Item value="RibbonDropDownItem" priority="1" />
       <Item value="Id" priority="1" />
       <Item value="Label" priority="2" />
@@ -85,7 +85,7 @@
       <Item value="country`0" priority="0" />
       <Item value="country" priority="5" />
       <Item value="Console`0" priority="5" />
-      <Item value="currency" priority="0" />
+      <Item value="currency" priority="1" />
       <Item value="string" priority="10" />
       <Item value="dataSet" priority="3" />
       <Item value="DataSet" priority="0" />
@@ -104,7 +104,7 @@
       <Item value="this" priority="1" />
       <Item value="try" priority="3" />
       <Item value="group1" priority="1" />
-      <Item value="var" priority="4" />
+      <Item value="var" priority="6" />
       <Item value="app" priority="4" />
       <Item value="task" priority="7" />
       <Item value="Interop" priority="3" />
@@ -152,6 +152,10 @@
       <Item value="MessageBox`0" priority="0" />
       <Item value="OK" priority="0" />
       <Item value="Error" priority="0" />
+      <Item value="CurrencyServices" priority="0" />
+      <Item value="CurrencyConvertor`0" priority="0" />
+      <Item value="Currency" priority="0" />
+      <Item value="Currency`0" priority="1" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:Microsoft.Office.Tools.Ribbon.RibbonDropDown">
       <Item value="Items" priority="0" />
@@ -303,6 +307,13 @@
     </ItemStatistics>
     <ItemStatistics item="Qualified:@System.Windows.Forms.MessageBox">
       <Item value="Show`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:ConsoleApplication1.CurrencyServices.CurrencyConvertor">
+      <Item value="ConversionRate`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@ConsoleApplication1.CurrencyServices.Currency">
+      <Item value="USD" priority="0" />
+      <Item value="INR" priority="0" />
     </ItemStatistics>
   </CompletionStatisticsManager>
 </Configuration>

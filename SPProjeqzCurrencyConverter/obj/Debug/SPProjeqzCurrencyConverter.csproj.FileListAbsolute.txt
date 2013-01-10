@@ -1,0 +1,5 @@
+C:\Users\Administrator\Desktop\Projeqz Currency Converter\ProjeqzCurrencyConverter\SPProjeqzCurrencyConverter\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\Projeqz Currency Converter\ProjeqzCurrencyConverter\SPProjeqzCurrencyConverter\bin\Debug\SPProjeqzCurrencyConverter.dll
+C:\Users\Administrator\Desktop\Projeqz Currency Converter\ProjeqzCurrencyConverter\SPProjeqzCurrencyConverter\bin\Debug\SPProjeqzCurrencyConverter.pdb
+C:\Users\Administrator\Desktop\Projeqz Currency Converter\ProjeqzCurrencyConverter\SPProjeqzCurrencyConverter\obj\Debug\SPProjeqzCurrencyConverter.dll
+C:\Users\Administrator\Desktop\Projeqz Currency Converter\ProjeqzCurrencyConverter\SPProjeqzCurrencyConverter\obj\Debug\SPProjeqzCurrencyConverter.pdb
