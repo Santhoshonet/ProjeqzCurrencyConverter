@@ -1,8 +1,8 @@
 ﻿using System;
+using CurrencyConversionWebService;
 using Microsoft.SharePoint;
 using Microsoft.SharePoint.Administration;
-using SPProjeqzCurrencyConverter.CurrencyServices;
-
+using CurrencyConversionWebService.CurrencyServices;
 namespace SPProjeqzCurrencyConverter
 {
     class CurrencyConversionTimerJob : SPJobDefinition
@@ -24,144 +24,177 @@ namespace SPProjeqzCurrencyConverter
             {
                 // impersonation for sharepoint 
                 SPSecurity.RunWithElevatedPrivileges(delegate
-                {
-                    // getting all currencies and moving into an array
-                    var currencies = Enum.GetNames(typeof(Currency));
-                    
-                    // iterating SPSite object to access site values
-                    foreach (SPSite site in WebApplication.Sites)
-                    {   
-                        
-                        // opening root site and moving to web object
-                        using (var web = site.RootWeb)
-                        {
+                                                         {
+                                                             // getting all currencies and moving into an array
+                                                             var currencies = Enum.GetNames(typeof (Currency));
 
-                            // as a work around we are finding pwa with title, need to figure our an elagant way for this
-                            if (web.Title == "Project Web App")
-                            {
+                                                             // iterating SPSite object to access site values
+                                                             foreach (SPSite site in WebApplication.Sites)
+                                                             {
 
-                                // setting allow unsafe updates to true for avoiding list item creating issues.
-                                web.AllowUnsafeUpdates = true;
+                                                                 // opening root site and moving to web object
+                                                                 using (var web = site.RootWeb)
+                                                                 {
 
-                                // getting list object here with name
-                                var list = site.RootWeb.Lists.TryGetList(Constants.ListName);
+                                                                     // as a work around we are finding pwa with title, need to figure our an elagant way for this
+                                                                     if (web.Title == "Project Web App")
+                                                                     {
 
-                                // checks if the list is found or not
-                                if (list == null)
-                                {
-                                    // creating list if it is not exists
-                                    var listGuid = site.RootWeb.Lists.Add(Constants.ListName, Constants.ListDescription,
-                                                                          SPListTemplateType.GenericList);
+                                                                         // setting allow unsafe updates to true for avoiding list item creating issues.
+                                                                         web.AllowUnsafeUpdates = true;
 
-                                    // getting newly created list into object
-                                    list = site.RootWeb.Lists[listGuid];
+                                                                         // getting list object here with name
+                                                                         var list =
+                                                                             site.RootWeb.Lists.TryGetList(
+                                                                                 Constants.ListName);
 
-                                    // adding choice field to store from currency name
-                                    list.Fields.Add(Constants.FromCurrencyFieldName, SPFieldType.Choice, true);
+                                                                         // checks if the list is found or not
+                                                                         if (list == null)
+                                                                         {
+                                                                             // creating list if it is not exists
+                                                                             var listGuid =
+                                                                                 site.RootWeb.Lists.Add(
+                                                                                     Constants.ListName,
+                                                                                     Constants.ListDescription,
+                                                                                     SPListTemplateType.GenericList);
 
-                                    // getting newly created from currency field into object
-                                    var spFromCurrencyField =
-                                        (SPFieldChoice) list.Fields[Constants.FromCurrencyFieldName];
+                                                                             // getting newly created list into object
+                                                                             list = site.RootWeb.Lists[listGuid];
 
-                                    // adding choice field to store 'to currency' name
-                                    list.Fields.Add(Constants.ToCurrencyFieldName, SPFieldType.Choice, true);
+                                                                             // adding choice field to store from currency name
+                                                                             list.Fields.Add(
+                                                                                 Constants.FromCurrencyFieldName,
+                                                                                 SPFieldType.Choice, true);
 
-                                    // getting newly created 'to currency' field into object
-                                    var spToCurrencyField = (SPFieldChoice) list.Fields[Constants.ToCurrencyFieldName];
+                                                                             // getting newly created from currency field into object
+                                                                             var spFromCurrencyField =
+                                                                                 (SPFieldChoice)
+                                                                                 list.Fields[
+                                                                                     Constants.FromCurrencyFieldName];
 
-                                    // iterating all currency types and move into choices in choice field
-                                    foreach (string currencyName in currencies)
-                                    {
-                                        // first adding to from currency field
-                                        spFromCurrencyField.Choices.Add(currencyName);
+                                                                             // adding choice field to store 'to currency' name
+                                                                             list.Fields.Add(
+                                                                                 Constants.ToCurrencyFieldName,
+                                                                                 SPFieldType.Choice, true);
 
-                                        // adding to to currency field
-                                        spToCurrencyField.Choices.Add(currencyName);
-                                    }
+                                                                             // getting newly created 'to currency' field into object
+                                                                             var spToCurrencyField =
+                                                                                 (SPFieldChoice)
+                                                                                 list.Fields[
+                                                                                     Constants.ToCurrencyFieldName];
 
-                                    // updating from currency field to store the updated/added changes
-                                    spFromCurrencyField.Update();
+                                                                             // iterating all currency types and move into choices in choice field
+                                                                             foreach (string currencyName in currencies)
+                                                                             {
+                                                                                 // first adding to from currency field
+                                                                                 spFromCurrencyField.Choices.Add(
+                                                                                     currencyName);
 
-                                    // updating 'to currency' field to store the updated/added changes
-                                    spToCurrencyField.Update();
+                                                                                 // adding to to currency field
+                                                                                 spToCurrencyField.Choices.Add(
+                                                                                     currencyName);
+                                                                             }
 
-                                    // adding number field to store currency Rate
-                                    list.Fields.Add(Constants.RateFieldName, SPFieldType.Number, true);
+                                                                             // updating from currency field to store the updated/added changes
+                                                                             spFromCurrencyField.Update();
 
-                                    // getting newly created number field and moving into an object
-                                    var rateField = (SPFieldNumber) list.Fields[Constants.RateFieldName];
+                                                                             // updating 'to currency' field to store the updated/added changes
+                                                                             spToCurrencyField.Update();
 
-                                    // setting number of decimals here
-                                    rateField.DisplayFormat = SPNumberFormatTypes.FourDecimals;
+                                                                             // adding number field to store currency Rate
+                                                                             list.Fields.Add(Constants.RateFieldName,
+                                                                                             SPFieldType.Number, true);
 
-                                    // setting minimum value here
-                                    rateField.MinimumValue = 0.0f;
+                                                                             // getting newly created number field and moving into an object
+                                                                             var rateField =
+                                                                                 (SPFieldNumber)
+                                                                                 list.Fields[Constants.RateFieldName];
 
-                                    // setting default value as 0 
-                                    rateField.DefaultValue = "0";
+                                                                             // setting number of decimals here
+                                                                             rateField.DisplayFormat =
+                                                                                 SPNumberFormatTypes.FourDecimals;
 
-                                    // updating number filed to store updated/added values.
-                                    rateField.Update();
+                                                                             // setting minimum value here
+                                                                             rateField.MinimumValue = 0.0f;
 
-                                    // finally updating the list to store above fields and its values, configurations.
-                                    list.Update();
-                                }
+                                                                             // setting default value as 0 
+                                                                             rateField.DefaultValue = "0";
 
-                                // initiating the currency web sevice client
-                                var currency = new CurrencyConvertor();
+                                                                             // updating number filed to store updated/added values.
+                                                                             rateField.Update();
 
-                                // primary iteration for all the currencies
-                                for (var primaryIndex = 0; primaryIndex < currencies.Length; primaryIndex++)
-                                {
+                                                                             // finally updating the list to store above fields and its values, configurations.
+                                                                             list.Update();
+                                                                         }
 
-                                    // getting the currency from the current iterated element
-                                    var primaryCurrency =
-                                        (Currency) Enum.Parse(typeof (Currency), currencies[primaryIndex]);
+                                                                         // initiating the currency web sevice client
+                                                                         var currency = new CurrencyConvertor();
 
-                                    // secondary iteration for rest of the currencies
-                                    for (var secondaryIndex = primaryIndex + 1;
-                                         secondaryIndex < currencies.Length;
-                                         secondaryIndex++)
-                                    {
-                                        // getting the currency from the current iterated element
-                                        var secondaryCurrency =
-                                            (Currency) Enum.Parse(typeof (Currency), currencies[primaryIndex]);
+                                                                         // primary iteration for all the currencies
+                                                                         for (var primaryIndex = 0;
+                                                                              primaryIndex < currencies.Length;
+                                                                              primaryIndex++)
+                                                                         {
 
-                                        // calling web service method to get today's currency rate and storing into variable
-                                        var rate = currency.ConversionRate(primaryCurrency, secondaryCurrency);
+                                                                             // getting the currency from the current iterated element
+                                                                             var primaryCurrency =
+                                                                                 (Currency)
+                                                                                 Enum.Parse(typeof (Currency),
+                                                                                            currencies[primaryIndex]);
 
-                                        // checking whether it is having any conversion rate for the given currencies
-                                        if (rate > 0)
-                                        {
-                                            // adding a list item to store the values
-                                            var newListItem = list.Items.Add();
+                                                                             // secondary iteration for rest of the currencies
+                                                                             for (var secondaryIndex = primaryIndex + 1;
+                                                                                  secondaryIndex < currencies.Length;
+                                                                                  secondaryIndex++)
+                                                                             {
+                                                                                 // getting the currency from the current iterated element
+                                                                                 var secondaryCurrency =
+                                                                                     (Currency)
+                                                                                     Enum.Parse(typeof (Currency),
+                                                                                                currencies[primaryIndex]);
 
-                                            // updating primary currency field value into from currency field
-                                            newListItem[Constants.FromCurrencyFieldName] = primaryCurrency.ToString();
+                                                                                 // calling web service method to get today's currency rate and storing into variable
+                                                                                 var rate =
+                                                                                     currency.ConversionRate(
+                                                                                         primaryCurrency,
+                                                                                         secondaryCurrency);
 
-                                            // updating secondary currency field value into 'to currency' field
-                                            newListItem[Constants.ToCurrencyFieldName] = secondaryCurrency.ToString();
+                                                                                 // checking whether it is having any conversion rate for the given currencies
+                                                                                 if (rate > 0)
+                                                                                 {
+                                                                                     // adding a list item to store the values
+                                                                                     var newListItem = list.Items.Add();
 
-                                            // updating rate field with the real time value
-                                            newListItem[Constants.RateFieldName] = rate;
+                                                                                     // updating primary currency field value into from currency field
+                                                                                     newListItem[
+                                                                                         Constants.FromCurrencyFieldName
+                                                                                         ] = primaryCurrency.ToString();
 
-                                            // finally update the new list item store in the content db
-                                            newListItem.Update();
-                                        }
-                                    }
-                                }
-                            }
+                                                                                     // updating secondary currency field value into 'to currency' field
+                                                                                     newListItem[
+                                                                                         Constants.ToCurrencyFieldName]
+                                                                                         = secondaryCurrency.ToString();
 
-                        }
-                    }
-                }
-            );
+                                                                                     // updating rate field with the real time value
+                                                                                     newListItem[Constants.RateFieldName
+                                                                                         ] = rate;
+
+                                                                                     // finally update the new list item store in the content db
+                                                                                     newListItem.Update();
+                                                                                 }
+                                                                             }
+                                                                         }
+                                                                     }
+
+                                                                 }
+                                                             }
+                                                         }
+                    );
             }
             catch (Exception ex)
             {
-                SPDiagnosticsService.Local.WriteTrace(0, new SPDiagnosticsCategory(Constants.UlsLogCategoryName, TraceSeverity.Monitorable,EventSeverity.Error),TraceSeverity.Monitorable,ex.Message,new object[] {ex.Message});
+                ExceptionHandling.WriteUlsLog(ex);
             }
-
             base.Execute(targetInstanceId);
         }
     }

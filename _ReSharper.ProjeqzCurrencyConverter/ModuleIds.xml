@@ -2,4 +2,5 @@
   <Module PersistentId="AF310BE4-DCB6-40CC-964A-36B8F34B4404" ModuleId="ProjeqzCurrencyConverter" />
   <Module PersistentId="68E5450C-BF10-4DCF-B9D8-A1039A84AE05" ModuleId="ConsoleApplication1" />
   <Module PersistentId="C94783D7-0F48-4D3E-86DB-8FB0A6E52D07" ModuleId="SPProjeqzCurrencyConverter" />
+  <Module PersistentId="F9C6460B-34CD-4FEA-BE51-5F6AA0C76E05" ModuleId="CurrencyConversionWebService" />
 </Modules>

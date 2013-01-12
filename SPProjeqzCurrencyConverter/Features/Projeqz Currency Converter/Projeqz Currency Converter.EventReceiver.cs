@@ -1,5 +1,6 @@
 using System;
 using System.Runtime.InteropServices;
+using CurrencyConversionWebService;
 using Microsoft.SharePoint;
 using Microsoft.SharePoint.Administration;
 
@@ -19,21 +20,32 @@ namespace SPProjeqzCurrencyConverter.Features.Projeqz_Currency_Converter
 
         public override void FeatureActivated(SPFeatureReceiverProperties properties)
         {
-            var site = properties.Feature.Parent as SPSite;
-            // make sure the job isn't already registered
-            if (site != null)
+            try
             {
-                foreach (SPJobDefinition job in site.WebApplication.JobDefinitions)
+                if (!Constants.IsitInDevelopmentMode)
                 {
-                    if (job.Name == Constants.TimerJobName)
-                        job.Delete();
+                    var site = properties.Feature.Parent as SPSite;
+                    // make sure the job isn't already registered
+                    if (site != null)
+                    {
+                        foreach (SPJobDefinition job in site.WebApplication.JobDefinitions)
+                        {
+                            if (job.Name == Constants.TimerJobName)
+                                job.Delete();
+                        }
+                        // install the job
+                        var currencyConversionTimerJob = new CurrencyConversionTimerJob(Constants.TimerJobName,
+                                                                                        site.WebApplication);
+                        //To perform the task on daily basis
+                        var schedule = new SPDailySchedule {BeginHour = 0, BeginMinute = 0, BeginSecond = 0};
+                        currencyConversionTimerJob.Schedule = schedule;
+                        currencyConversionTimerJob.Update();
+                    }
                 }
-                // install the job
-                var currencyConversionTimerJob = new CurrencyConversionTimerJob(Constants.TimerJobName, site.WebApplication);
-                //To perform the task on daily basis
-                var schedule = new SPDailySchedule {BeginHour = 0, BeginMinute = 0, BeginSecond = 0};
-                currencyConversionTimerJob.Schedule = schedule;
-                currencyConversionTimerJob.Update();
+            }
+            catch (Exception ex)
+            {
+                ExceptionHandling.WriteUlsLog(ex);
             }
         }
 
@@ -42,15 +54,25 @@ namespace SPProjeqzCurrencyConverter.Features.Projeqz_Currency_Converter
 
         public override void FeatureDeactivating(SPFeatureReceiverProperties properties)
         {
-            var site = properties.Feature.Parent as SPSite;
-            // make sure the job isn't already registered
-            if (site != null)
+            try
             {
-                foreach (SPJobDefinition job in site.WebApplication.JobDefinitions)
+                if (!Constants.IsitInDevelopmentMode)
                 {
-                    if (job.Name == Constants.TimerJobName)
-                        job.Delete();
+                    var site = properties.Feature.Parent as SPSite;
+                    // make sure the job isn't already registered
+                    if (site != null)
+                    {
+                        foreach (SPJobDefinition job in site.WebApplication.JobDefinitions)
+                        {
+                            if (job.Name == Constants.TimerJobName)
+                                job.Delete();
+                        }
+                    }
                 }
+            }
+            catch (Exception ex)
+            {
+                ExceptionHandling.WriteUlsLog(ex);
             }
         }
 

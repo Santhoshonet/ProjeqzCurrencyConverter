@@ -3,6 +3,9 @@
   <Assemblies>
     <Assembly Location="SPProjeqzCurrencyConverter.dll" DeploymentTarget="GlobalAssemblyCache" />
   </Assemblies>
+  <TemplateFiles>
+    <TemplateFile Location="Layouts\SPProjeqzCurrencyConverter\ProjeqzCurrencyConverter.asmx" />
+  </TemplateFiles>
   <FeatureManifests>
     <FeatureManifest Location="SPProjeqzCurrencyConverter_Projeqz Currency Converter\Feature.xml" />
   </FeatureManifests>

@@ -1,6 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="b35c4ca0-40fe-496a-901c-402c42784d82" solutionId="b35c4ca0-40fe-496a-901c-402c42784d82" resetWebServer="false" name="SPProjeqzCurrencyConverter" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <assemblies>
+    <projectOutputAssembly location="CurrencyConversionWebService.dll" deploymentTarget="GlobalAssemblyCache" projectPath="..\CurrencyConversionWebService\CurrencyConversionWebService.csproj" />
+  </assemblies>
   <features>
     <featureReference itemId="4be3ba6d-5395-4fba-95ae-67084f42baf8" />
   </features>
+  <projectItems>
+    <projectItemReference itemId="d4921c57-9d5c-497e-b806-54a468bc98bf" />
+  </projectItems>
 </package>
