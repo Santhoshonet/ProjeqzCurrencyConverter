@@ -9,3 +9,15 @@ C:\Users\Santhosh\Desktop\MyWorks\ProjeqzCurrencyConverter\ProjeqzCurrencyConver
 C:\Users\Santhosh\Desktop\MyWorks\ProjeqzCurrencyConverter\ProjeqzCurrencyConverter\obj\Debug\ProjeqzCurrencyConverter.CurrencyConverter.resources
 C:\Users\Santhosh\Desktop\MyWorks\ProjeqzCurrencyConverter\ProjeqzCurrencyConverter\bin\Debug\ProjeqzCurrencyConverter.dll.config
 C:\Users\Santhosh\Desktop\MyWorks\ProjeqzCurrencyConverter\ProjeqzCurrencyConverter\obj\Debug\ProjeqzCurrencyConverter.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\Projeqz Currency Converter\ProjeqzCurrencyConverter\ProjeqzCurrencyConverter\bin\Debug\ProjeqzCurrencyConverter.dll.config
+C:\Users\Administrator\Desktop\Projeqz Currency Converter\ProjeqzCurrencyConverter\ProjeqzCurrencyConverter\bin\Debug\ProjeqzCurrencyConverter.dll
+C:\Users\Administrator\Desktop\Projeqz Currency Converter\ProjeqzCurrencyConverter\ProjeqzCurrencyConverter\bin\Debug\ProjeqzCurrencyConverter.pdb
+C:\Users\Administrator\Desktop\Projeqz Currency Converter\ProjeqzCurrencyConverter\ProjeqzCurrencyConverter\bin\Debug\ProjeqzCurrencyConverter.dll.manifest
+C:\Users\Administrator\Desktop\Projeqz Currency Converter\ProjeqzCurrencyConverter\ProjeqzCurrencyConverter\bin\Debug\ProjeqzCurrencyConverter.vsto
+C:\Users\Administrator\Desktop\Projeqz Currency Converter\ProjeqzCurrencyConverter\ProjeqzCurrencyConverter\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\Projeqz Currency Converter\ProjeqzCurrencyConverter\ProjeqzCurrencyConverter\obj\Debug\ProjeqzCurrencyConverter.CurrencyConverter.resources
+C:\Users\Administrator\Desktop\Projeqz Currency Converter\ProjeqzCurrencyConverter\ProjeqzCurrencyConverter\obj\Debug\ProjeqzCurrencyConverter.Properties.Resources.resources
+C:\Users\Administrator\Desktop\Projeqz Currency Converter\ProjeqzCurrencyConverter\ProjeqzCurrencyConverter\obj\Debug\ResGen.read.1.tlog
+C:\Users\Administrator\Desktop\Projeqz Currency Converter\ProjeqzCurrencyConverter\ProjeqzCurrencyConverter\obj\Debug\ResGen.write.1.tlog
+C:\Users\Administrator\Desktop\Projeqz Currency Converter\ProjeqzCurrencyConverter\ProjeqzCurrencyConverter\obj\Debug\ProjeqzCurrencyConverter.dll
+C:\Users\Administrator\Desktop\Projeqz Currency Converter\ProjeqzCurrencyConverter\ProjeqzCurrencyConverter\obj\Debug\ProjeqzCurrencyConverter.pdb

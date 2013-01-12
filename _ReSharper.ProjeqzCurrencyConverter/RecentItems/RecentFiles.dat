@@ -1,29 +1,29 @@
 ﻿<RecentFiles>
   <RecentFiles>
-    <File id="AF310BE4-DCB6-40CC-964A-36B8F34B4404/f:ThisAddIn.cs" caret="377" fromTop="0" />
-    <File id="AF310BE4-DCB6-40CC-964A-36B8F34B4404/f:CurrencyConverter.Designer.cs" caret="4105" fromTop="15" />
+    <File id="AF310BE4-DCB6-40CC-964A-36B8F34B4404/f:CurrencyConverter.Designer.cs" caret="4116" fromTop="15" />
     <File id="AF310BE4-DCB6-40CC-964A-36B8F34B4404/f:app.config" caret="0" fromTop="0" />
-    <File id="AF310BE4-DCB6-40CC-964A-36B8F34B4404/f:CurrencyConverter.cs" caret="15609" fromTop="13" />
     <File id="68E5450C-BF10-4DCF-B9D8-A1039A84AE05/f:Program.cs" caret="1446" fromTop="0" />
     <File id="F9C6460B-34CD-4FEA-BE51-5F6AA0C76E05/f:Web.config" caret="8391" fromTop="0" />
     <File id="C94783D7-0F48-4D3E-86DB-8FB0A6E52D07/d:Layouts/d:SPProjeqzCurrencyConverter/f:ProjeqzCurrencyConverter.asmx" caret="200" fromTop="1" />
     <File id="F9C6460B-34CD-4FEA-BE51-5F6AA0C76E05/f:Constants.cs" caret="40" fromTop="1" />
-    <File id="C94783D7-0F48-4D3E-86DB-8FB0A6E52D07/f:CurrencyConversionTimerJob.cs" caret="15443" fromTop="195" />
     <File id="C94783D7-0F48-4D3E-86DB-8FB0A6E52D07/d:Features/d:Projeqz Currency Converter/f:Projeqz Currency Converter.EventReceiver.cs" caret="2404" fromTop="25" />
-    <File id="F9C6460B-34CD-4FEA-BE51-5F6AA0C76E05/f:ProjeqzCurrencyConverterService.cs" caret="1146" fromTop="28" />
     <File id="F9C6460B-34CD-4FEA-BE51-5F6AA0C76E05/f:ExceptionHandling.cs" caret="461" fromTop="13" />
+    <File id="AF310BE4-DCB6-40CC-964A-36B8F34B4404/f:ThisAddIn.cs" caret="208" fromTop="7" />
+    <File id="C94783D7-0F48-4D3E-86DB-8FB0A6E52D07/f:CurrencyConversionTimerJob.cs" caret="10905" fromTop="25" />
+    <File id="F9C6460B-34CD-4FEA-BE51-5F6AA0C76E05/f:ProjeqzCurrencyConverterService.cs" caret="778" fromTop="20" />
+    <File id="AF310BE4-DCB6-40CC-964A-36B8F34B4404/f:CurrencyConverter.cs" caret="24994" fromTop="13" />
   </RecentFiles>
   <RecentEdits>
-    <File id="AF310BE4-DCB6-40CC-964A-36B8F34B4404/f:CurrencyConverter.Designer.cs" caret="4105" fromTop="13" />
+    <File id="AF310BE4-DCB6-40CC-964A-36B8F34B4404/f:CurrencyConverter.Designer.cs" caret="4116" fromTop="13" />
     <File id="AF310BE4-DCB6-40CC-964A-36B8F34B4404/f:app.config" caret="0" fromTop="0" />
-    <File id="AF310BE4-DCB6-40CC-964A-36B8F34B4404/f:CurrencyConverter.cs" caret="18047" fromTop="24" />
     <File id="68E5450C-BF10-4DCF-B9D8-A1039A84AE05/f:Program.cs" caret="1446" fromTop="0" />
     <File id="F9C6460B-34CD-4FEA-BE51-5F6AA0C76E05/f:Web.config" caret="8391" fromTop="0" />
     <File id="C94783D7-0F48-4D3E-86DB-8FB0A6E52D07/d:Layouts/d:SPProjeqzCurrencyConverter/f:ProjeqzCurrencyConverter.asmx" caret="200" fromTop="1" />
     <File id="F9C6460B-34CD-4FEA-BE51-5F6AA0C76E05/f:Constants.cs" caret="758" fromTop="1" />
     <File id="C94783D7-0F48-4D3E-86DB-8FB0A6E52D07/f:CurrencyConversionTimerJob.cs" caret="15443" fromTop="195" />
     <File id="C94783D7-0F48-4D3E-86DB-8FB0A6E52D07/d:Features/d:Projeqz Currency Converter/f:Projeqz Currency Converter.EventReceiver.cs" caret="2404" fromTop="25" />
-    <File id="F9C6460B-34CD-4FEA-BE51-5F6AA0C76E05/f:ProjeqzCurrencyConverterService.cs" caret="1146" fromTop="28" />
     <File id="F9C6460B-34CD-4FEA-BE51-5F6AA0C76E05/f:ExceptionHandling.cs" caret="461" fromTop="13" />
+    <File id="F9C6460B-34CD-4FEA-BE51-5F6AA0C76E05/f:ProjeqzCurrencyConverterService.cs" caret="821" fromTop="21" />
+    <File id="AF310BE4-DCB6-40CC-964A-36B8F34B4404/f:CurrencyConverter.cs" caret="24518" fromTop="11" />
   </RecentEdits>
 </RecentFiles>

@@ -4,3 +4,9 @@ C:\Users\Santhosh\Desktop\MyWorks\ProjeqzCurrencyConverter\ConsoleApplication1\b
 C:\Users\Santhosh\Desktop\MyWorks\ProjeqzCurrencyConverter\ConsoleApplication1\obj\x86\Debug\ConsoleApplication1.exe
 C:\Users\Santhosh\Desktop\MyWorks\ProjeqzCurrencyConverter\ConsoleApplication1\obj\x86\Debug\ConsoleApplication1.pdb
 C:\Users\Santhosh\Desktop\MyWorks\ProjeqzCurrencyConverter\ConsoleApplication1\obj\x86\Debug\ConsoleApplication1.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\Projeqz Currency Converter\ProjeqzCurrencyConverter\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe.config
+C:\Users\Administrator\Desktop\Projeqz Currency Converter\ProjeqzCurrencyConverter\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe
+C:\Users\Administrator\Desktop\Projeqz Currency Converter\ProjeqzCurrencyConverter\ConsoleApplication1\bin\Debug\ConsoleApplication1.pdb
+C:\Users\Administrator\Desktop\Projeqz Currency Converter\ProjeqzCurrencyConverter\ConsoleApplication1\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\Projeqz Currency Converter\ProjeqzCurrencyConverter\ConsoleApplication1\obj\x86\Debug\ConsoleApplication1.exe
+C:\Users\Administrator\Desktop\Projeqz Currency Converter\ProjeqzCurrencyConverter\ConsoleApplication1\obj\x86\Debug\ConsoleApplication1.pdb

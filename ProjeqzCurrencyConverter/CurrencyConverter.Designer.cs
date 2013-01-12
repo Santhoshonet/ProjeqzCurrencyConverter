@@ -76,7 +76,7 @@ namespace ProjeqzCurrencyConverter
             // 
             this.BtnConvertCurrency.Label = "                         Convert                         ";
             this.BtnConvertCurrency.Name = "BtnConvertCurrency";
-            this.BtnConvertCurrency.Click += new System.EventHandler<Microsoft.Office.Tools.Ribbon.RibbonControlEventArgs>(this.Button1Click);
+            this.BtnConvertCurrency.Click += new System.EventHandler<Microsoft.Office.Tools.Ribbon.RibbonControlEventArgs>(this.BtnConvertCurrencyClick);
             // 
             // NotificationIcon
             // 

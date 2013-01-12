@@ -16,10 +16,11 @@ namespace CurrencyConversionWebService
                 var currency = new CurrencyConvertor();
 
                 // getting the currency from the current iterated element
-                var primaryCurrency = (Currency) Enum.Parse(typeof (Currency), fromCurrency);
+                var primaryCurrency = (Currency)Enum.Parse(typeof(Currency), fromCurrency);
 
                 // getting the currency from the current iterated element
-                var secondaryCurrency = (Currency) Enum.Parse(typeof (Currency), toCurrency);
+                var secondaryCurrency = (Currency)Enum.Parse(typeof(Currency), toCurrency);
+
 
                 // calling web method to get actual convertion rate
                 return currency.ConversionRate(primaryCurrency, secondaryCurrency);
