@@ -2,8 +2,10 @@
 using System.Globalization;
 using System.Linq;
 using System.Windows.Forms;
+using System.Xml;
 using Microsoft.Office.Interop.MSProject;
 using Microsoft.Office.Tools.Ribbon;
+using Microsoft.SharePoint.Client;
 using ProjeqzCurrencyConverter.ProjeqzWebService;
 using Exception = System.Exception;
 using ProjeqzCurrencyConverter.CurrencyServices;
@@ -12,10 +14,6 @@ namespace ProjeqzCurrencyConverter
 {
     public partial class CurrencyConverter
     {
-        public static ProductEdition Edition = ProductEdition.Enterprise;
-
-        public static ConvertionRatePullMethod ConvertionRatePullMethod = ConvertionRatePullMethod.GetFromIntranetPwaServer;
-
         public static string CustomFieldName = "Converted Cost";
 
         public string FromCurrencyCode = string.Empty;
@@ -230,7 +228,7 @@ namespace ProjeqzCurrencyConverter
                         CmbCurrency.Text = currency;
                 }
 
-                if (Edition == ProductEdition.Standard)
+                if (Constants.Edition == ProductEdition.Standard)
                    TxtCurrencyRate.Visible = true;
                 else
                 {
@@ -250,7 +248,7 @@ namespace ProjeqzCurrencyConverter
             if (!string.IsNullOrEmpty(CmbCurrency.Text))
             {
                 var app = Globals.ThisAddIn.Application;
-                if (Edition == ProductEdition.Standard)
+                if (Constants.Edition == ProductEdition.Standard)
                 {
                     if (!string.IsNullOrEmpty(TxtCurrencyRate.Text))
                     {
@@ -310,11 +308,11 @@ namespace ProjeqzCurrencyConverter
 
                         var rate = 0.0d;
 
-                        if(ConvertionRatePullMethod == ConvertionRatePullMethod.GetFromLiveWebService)
+                        if(Constants.ConvertionRatePullMethod == ConvertionRatePullMethod.GetFromLiveWebService)
                             // calling web method to get actual convertion rate
                             rate = currency.ConversionRate(primaryCurrency, secondaryCurrency);
 
-                        else // if it needs to call intranet web service for conversion
+                        else if(Constants.ConvertionRatePullMethod == ConvertionRatePullMethod.GetFromIntranetPwaServer) // if it needs to call intranet web service for conversion
                         {
                             var webServiceUrl = app.ActiveProject.ServerURL + "/_layouts/SPProjeqzCurrencyConverter/ProjeqzCurrencyConverter.asmx";
                             var projeqzCurrencyConverterService = new ProjeqzCurrencyConverterService
@@ -324,6 +322,72 @@ namespace ProjeqzCurrencyConverter
                                                                           UseDefaultCredentials = true
                                                                       };
                             rate = projeqzCurrencyConverterService.Convert(primaryCurrency.ToString(), secondaryCurrency.ToString());
+                        }
+                        else
+                        {
+                            // finally option, get the rate from project convertion setting list from pwa site using client object model
+
+                            var context = new ClientContext(app.ActiveProject.ServerURL);
+
+                            var spList = context.Site.RootWeb.Lists.GetByTitle(Constants.ListName);
+
+                            context.Load(spList);
+
+                            context.ExecuteQuery();
+
+                            if (spList != null)
+                            {
+                                var camlQuery = new CamlQuery
+                                {
+                                    ViewXml = @"                                                           
+                                                        <View>
+	                                                    <Query>
+		                                                    <Where>
+			                                                    <Or>
+				                                                    <And>
+					                                                    <Eq>
+						                                                    <FieldRef Name='" + XmlConvert.EncodeName(Constants.FromCurrencyFieldName) + @"' />
+							                                                    <Value Type='Choice'>" + primaryCurrency.ToString() + @"</Value>
+					                                                    </Eq>
+					                                                    <Eq>
+						                                                    <FieldRef Name='" + XmlConvert.EncodeName(Constants.ToCurrencyFieldName) + @"' />
+							                                                    <Value Type='Choice'>" + secondaryCurrency.ToString() + @"</Value>
+					                                                    </Eq>
+				                                                    </And>
+				                                                    <And>
+					                                                    <Eq>
+						                                                    <FieldRef Name='" + XmlConvert.EncodeName(Constants.FromCurrencyFieldName) + @"' />
+							                                                    <Value Type='Choice'>" + secondaryCurrency.ToString() + @"</Value>
+					                                                    </Eq>
+                                                                        <Eq>
+						                                                    <FieldRef Name='" + XmlConvert.EncodeName(Constants.ToCurrencyFieldName) + @"' />
+							                                                    <Value Type='Choice'>" + primaryCurrency.ToString() + @"</Value>
+					                                                    </Eq>
+					                                                    
+				                                                    </And>
+			                                                    </Or>
+		                                                    </Where>
+	                                                    </Query>
+                                                        <ViewFields>
+                                                            <FieldRef Name='" + XmlConvert.EncodeName(Constants.RateFieldName) + @"' />
+                                                        </ViewFields>
+                                                    </View>
+                                                    "
+                                };
+
+
+                                var spItemCollection = spList.GetItems(camlQuery);
+
+                                context.Load(spItemCollection);
+
+                                context.ExecuteQuery();
+
+                                foreach (ListItem listItem in spItemCollection)
+                                {
+                                    rate = Convert.ToDouble(listItem[Constants.RateFieldName]);
+                                    break;
+                                }
+                            }
                         }
 
                         // iterating to all the tasks to set the new conversion
@@ -407,15 +471,5 @@ namespace ProjeqzCurrencyConverter
         }
     }
 
-    public enum ProductEdition
-    {
-        Standard,
-        Enterprise
-    }
-
-    public enum ConvertionRatePullMethod
-    {
-        GetFromLiveWebService, // from http://www.webservicex.net/CurrencyConvertor.asmx?WSDL
-        GetFromIntranetPwaServer // from our customer web service <<PWAURL>>/_layouts/SPProjeqzCurrencyConverter/ProjeqzCurrencyConverter.asmx
-    }
+    
 }
